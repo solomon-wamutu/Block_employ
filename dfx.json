@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "Block_Employ_backend": {
+      "candid": "src/Block_Employ_backend/Block_Employ_backend.did",
+      "package": "Block_Employ_backend",
+      "type": "rust"
+    },
+    "Block_Employ_frontend": {
+      "dependencies": [
+        "Block_Employ_backend"
+      ],
+      "source": [
+        "src/Block_Employ_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Block_Employ_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
